@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="select">
+        <select id="filter" onchange="filterPty()">
+            <option value="all">Select Priorit</option>
+            <option value="high">Year , Recent 1st</option>
+            <option value="low">Year , Oldest 1st</option>
+        </select>
+        <select id="filter2" onchange="filterPty2()">
+            <option value="all">Select Priorit</option>
+            <option value="after11">Movie After 2011</option>
+            <option value="after15">Movie After 2015</option>
+            <option value="after20">Movie After 2020</option>
+        </select>
+    </div>
+    
+
+
+    <div id="container">
+            <input type="text" placeholder="Enter Movie Name" id="movie" oninput="debouncer(getData,500)">
+            <button id="myButton" onclick="getData()">Search</button>
+            <br><br><br>
+            <div id="show"></div>
+            <div id="error"></div>
+    </div>
+</body>
+</html>
+<script src="index.js"></script>

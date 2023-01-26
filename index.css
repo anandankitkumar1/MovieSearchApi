@@ -1,0 +1,12 @@
+#container{
+    margin: 5%;
+    padding: 3%;
+    text-align: center;
+}
+#select{
+    margin-top: 5%;
+    text-align: center;
+}
+#select > select{
+   margin-right: 2%;
+}
